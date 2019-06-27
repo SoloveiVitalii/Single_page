@@ -1,0 +1,335 @@
+body {
+    max-width: 1170px;
+    margin: auto;
+
+}
+section {
+	padding-top: 100px;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #262626;
+	text-align: center;
+	/*padding-bottom: 20px;*/
+}
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 50px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	color: #262626;
+	font-weight: 600;
+}
+#top {
+	 background-image: url(../img/Banner.png);
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-position: center;
+	 height: 700px;
+}
+#top .banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#top .banner h1 {
+	padding-top: 40px;
+}
+#top .zip {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 20px;
+}
+#top .zip form {
+	background: #fff;
+	width: 320px;
+	padding: 20px;
+	border-bottom: 1px solid #ebebeb;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+#top .zip form .form_btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 40px;
+}
+#top .zip form .form_btn button {
+	background: #227dd3;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 27px;
+	font-weight: 600;
+	width: 200px;
+}
+#top .zip form .form_btn button:hover {
+	background: #fff;
+	color: #227dd3;
+	border: 1px solid #227dd3;
+}
+#top .zip .pic .row_1, .row_2 {
+	display: flex;
+	/*justify-content: center;*/
+	/*align-items: flex-start;*/
+}
+@media screen and (max-width: 375px) {
+    #top .banner h1 {
+	padding-top: 30px;
+	font-size: 45px;
+   }
+}
+@media screen and (max-width: 320px) { 
+    #top .banner h1 {
+	padding-top: 20px;
+	font-size: 35px;
+   }
+   #top .banner img {
+   	width: 100%;
+   }
+}
+/************************************************************/
+#work {
+	padding-top: 200px;
+}
+#work .container {
+	display: flex;
+	justify-content: space-around;
+}
+#work .container .documents .col p {
+	text-align: left;
+	width: 250px;
+}
+#work .container .photos .col p {
+	text-align: left;
+	width: 249px;
+}
+@media screen and (max-width: 414px) {
+    #work .container {
+    	display: flex;
+    	flex-direction: column;
+    }
+     #work .container .documents {
+     	padding-top: 90px;
+     	padding-bottom: 40px;
+     }
+}
+@media screen and (max-width: 375px) { 
+     #work .container .documents {
+     	padding-left: 30px;
+     }
+      #work .container .photos {
+     	padding-left: 30px;
+     }
+}
+@media screen and (max-width: 320px) {
+      #work .container .documents {
+      	padding-top: 20px;
+      	padding-bottom: 20px;
+      }
+}
+
+/***********************************************************/
+#product .box {
+	width: 100%;
+	height: auto;
+	background: #44a36f;
+	border-bottom: 200px solid transparent;
+	border-right: 50px solid transparent;
+	position:relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#product .box .box_2 {
+	background: #5fc18b;
+	border-bottom-right-radius: 600px;
+	height: 700px;
+	width: 100%;
+	/*display: inline-block;*/
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#product .box .box_2 h2 {
+	color: #fff;
+	font-size: 40px;
+	padding-top: 20px;
+}
+#product .box .box_2 p {
+	color: #fff;
+	font-size: 14px;
+	padding-top: 20px;
+	text-align: left;
+	width: 70%;
+}
+#product .box .box_3 {
+	padding-top: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	width: 70%;
+}
+#product .box .box_3 h2 {
+	color: #fff;
+	font-size: 40px;
+}
+#product .box .box_3 p {
+	color: #fff;
+	font-size: 14px;
+	padding-top: 20px;
+	text-align: left;
+	width: 130%;
+}
+#product .box .box_3 .download input {
+	background: #43a06d;
+	border: 2px solid #fff;
+	border-radius: 7%;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	width: 150px;
+	height: 40px;
+}
+#product .box .box_3 .download input:hover {
+	transform: scale(1.15);
+}
+@media screen and (max-width: 414px) { 
+    #product .box .box_3 {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding-top: 100px;
+    }
+    #product .box .box_2 img {
+    	padding-top: 100px;
+    }
+}
+@media screen and (max-width: 375px) { 
+    #product .box .box_3 p {
+	   width: 100%;
+    }
+    #product .box .box_3 img {
+    	padding-top: 70px;
+    }
+    #product .box .box_2 img {
+    	padding-top: 170px;
+    }
+    #product .box .box_2 h2 { 
+    	width: 72%;
+    }
+}
+@media screen and (max-width: 360px) { 
+    #product .box .box_2 img {
+    	padding-top: 100px;
+    }
+    #product .box .box_2 h2 { 
+    	width: 85%;
+    }
+     #product .box .box_2 p {
+    	width: 90%;
+    }
+    #product .box .box_3 img {
+    	padding-top: 10px;
+    }
+}
+ @media screen and (max-width: 320px) { 
+     #product .box .box_2 img {
+    	padding-top: 170px;
+    }
+    #product .box .box_3 img {
+    	padding-top: 60px;
+    }
+ }
+
+/****************************************************/
+#map {
+	 background-image: url(../img/map.png);
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-position: center;
+	 height: 700px;
+}
+#map .maps {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fdfdfd;
+	opacity: 0.8;
+	border-radius: 50%;
+	height: 500px;
+	width: 500px;
+	margin: 0 auto;
+}
+#map .maps form {
+	width: 300px;
+}
+#map .maps form .form_btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#map .maps form .form_btn .btn {
+	background: #43a06d;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 30px;
+}
+#map .maps form .form_btn .btn:hover {
+	background: #fff;
+	color: #43a06d;
+	border: 1px solid #43a06d;
+	transform: scale(1.15);
+}
+@media screen and (max-width: 414px) { 
+    #map .maps {
+	height: 400px;
+	width: 400px;
+  }
+}
+@media screen and (max-width: 375px) { 
+    #map .maps {
+	height: 370px;
+	width: 370px;
+  }
+}
+  @media screen and (max-width: 360px) {
+    #map .maps {
+	height: 360px;
+	width: 360px;
+  }
+}
+  @media screen and (max-width: 320px) { 
+    #map .maps {
+	height: 320px;
+	width: 320px;
+  }
+   #map .maps form {
+	width: 290px;
+   } 
+}
+/*****************************************/
+#footer {
+	padding-top: 0;
+	background: #43a06d;
+}
+#footer p {
+	color: #fff;
+	padding: 20px;
+	font-weight: 600;
+}
+/****************************************************/
